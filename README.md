@@ -1,4 +1,4 @@
-# FULL_ADDER_SUBTRACTOR
+<img width="1920" height="1080" alt="Screenshot 2025-12-16 192519" src="https://github.com/user-attachments/assets/f173802a-2f92-4826-9721-8226b08f48c4" /># FULL_ADDER_SUBTRACTOR
 
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
@@ -37,19 +37,63 @@ Diff = A ⊕ B ⊕ Bin
 Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
+```Full Adder```
+<img width="373" height="292" alt="Screenshot 2025-12-16 193515" src="https://github.com/user-attachments/assets/ed864fc9-af4c-4b92-b4d4-da1191a93cbe" />
+```Full Subtractor```
+<img width="187" height="315" alt="Screenshot 2025-12-16 193535" src="https://github.com/user-attachments/assets/d8de37cd-b2f9-4d51-b855-b6b7ed70aa62" />
 
 **Procedure**
+```
+1.Open Quartus Prime and create a new project using the New Project Wizard.
 
-Write the detailed procedure here
+2.Create a Verilog HDL file and write the code for Full Adder and Full Subtractor.
+
+3.Save the file and set it as the Top-Level Entity.
+
+4.Compile the design and verify that there are no compilation errors.
+
+5.Create input combinations using VWF/ModelSim for simulation.
+
+6.Verify the output with the truth table to confirm correct operation.
+```
+
+
 
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
+Developed by: RegisterNumber:25017693
+```
+i)FULL ADDER
 
+module fa(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=( (a ^ b)^cin);
+assign carry= ( (a & b)| ( cin &(a ^ b )));
+endmodule
+
+ii)FULL SUBTRACTOR
+
+module fs(a,b,bin,difference,borrow);
+input a,b,bin;
+output difference,borrow;
+assign difference= ( (a ^ b)^bin);
+assign borrow= ( ( ~a & b)| ( bin & (~(a ^ b ))));
+endmodule
+```
 **RTL Schematic**
+<img width="1920" height="1080" alt="Screenshot 2025-12-16 192519" src="https://github.com/user-attachments/assets/ee3bb82c-de32-4388-b004-5bcf4ff72ab4" />
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-16 192753" src="https://github.com/user-attachments/assets/8c3496ad-c23e-4554-8540-643d7a144a30" />
+
 
 **Output Timing Waveform**
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-16 192623" src="https://github.com/user-attachments/assets/0c8dad1c-2c6b-4d52-8f87-5cc40044868e" />
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-16 192849" src="https://github.com/user-attachments/assets/c291c1df-01ce-4ef5-b127-300993cf4d48" />
+
 
 **Result:**
 
