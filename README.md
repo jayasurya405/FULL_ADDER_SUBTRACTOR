@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="Screenshot 2025-12-16 192519" src="https://github.com/user-attachments/assets/f173802a-2f92-4826-9721-8226b08f48c4" /># FULL_ADDER_SUBTRACTOR
+# FULL_ADDER_SUBTRACTOR
 
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
@@ -37,9 +37,13 @@ Diff = A ⊕ B ⊕ Bin
 Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
+
 ```Full Adder```
+
 <img width="373" height="292" alt="Screenshot 2025-12-16 193515" src="https://github.com/user-attachments/assets/ed864fc9-af4c-4b92-b4d4-da1191a93cbe" />
+
 ```Full Subtractor```
+
 <img width="187" height="315" alt="Screenshot 2025-12-16 193535" src="https://github.com/user-attachments/assets/d8de37cd-b2f9-4d51-b855-b6b7ed70aa62" />
 
 **Procedure**
