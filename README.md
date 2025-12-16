@@ -87,15 +87,16 @@ assign borrow= ( ( ~a & b)| ( bin & (~(a ^ b ))));
 endmodule
 ```
 **RTL Schematic**
+Full Adder
 <img width="1920" height="1080" alt="Screenshot 2025-12-16 192519" src="https://github.com/user-attachments/assets/ee3bb82c-de32-4388-b004-5bcf4ff72ab4" />
-
+Full Subtractor
 <img width="1920" height="1080" alt="Screenshot 2025-12-16 192753" src="https://github.com/user-attachments/assets/8c3496ad-c23e-4554-8540-643d7a144a30" />
 
 
 **Output Timing Waveform**
-
+Full Adder
 <img width="1920" height="1080" alt="Screenshot 2025-12-16 192623" src="https://github.com/user-attachments/assets/0c8dad1c-2c6b-4d52-8f87-5cc40044868e" />
-
+Full Subtractor
 <img width="1920" height="1080" alt="Screenshot 2025-12-16 192849" src="https://github.com/user-attachments/assets/c291c1df-01ce-4ef5-b127-300993cf4d48" />
 
 
